@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Accounting Management System</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/journal.css">
+<link rel="stylesheet" href="css/ledger.css">
+<link rel="stylesheet" href="css/reports.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Agribusiness Accounting System</h1>
+
+</header>
+
+<div class="container">
+
+<nav class="sidebar">
+
+<ul>
+
+<li id="dashboardMenu">Dashboard</li>
+
+<li id="journalMenu">Transaction Journal</li>
+
+<li id="ledgerMenu">General Ledger</li>
+
+<li id="trialBalanceMenu">Trial Balance</li>
+
+<li id="reportMenu">Reports</li>
+
+</ul>
+
+</nav>
+
+<main>
+
+<section id="dashboard">
+
+<h2>Dashboard</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Cash</h3>
+
+<p id="cashBalance">₦0.00</p>
+
+</div>
+
+<div class="card">
+
+<h3>Bank</h3>
+
+<p id="bankBalance">₦0.00</p>
+
+</div>
+
+<div class="card">
+
+<h3>Revenue</h3>
+
+<p id="revenueBalance">₦0.00</p>
+
+</div>
+
+<div class="card">
+
+<h3>Expenses</h3>
+
+<p id="expenseBalance">₦0.00</p>
+
+</div>
+
+<div class="card">
+
+<h3>Profit</h3>
+
+<p id="profitBalance">₦0.00</p>
+
+</div>
+
+</div>
+
+</section>
+
+<hr>
+
+<section id="transactionForm">
+
+<h2>New Transaction</h2>
+
+<form id="journalForm">
+
+<input
+type="date"
+id="date"
+required>
+
+<input
+type="text"
+id="reference"
+placeholder="Reference Number"
+required>
+
+<input
+type="text"
+id="description"
+placeholder="Description"
+required>
+
+<select id="debitAccount">
+
+<option value="">Debit Account</option>
+
+</select>
+
+<select id="creditAccount">
+
+<option value="">Credit Account</option>
+
+</select>
+
+<input
+type="number"
+id="amount"
+placeholder="Amount"
+required>
+
+<button type="submit" id="saveTransaction">
+
+Save Transaction
+
+</button>
+
+</form>
+
+</section>
+
+<hr>
+
+<section>
+
+<h2>Transaction Journal</h2>
+
+<table id="journalTable">
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Reference</th>
+
+<th>Description</th>
+
+<th>Debit</th>
+
+<th>Credit</th>
+
+<th>Amount</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+</section>
+
+<hr>
+
+<section id="ledgerSection">
+
+    <h2>General Ledger</h2>
+
+    <table id="ledgerTable">
+
+        <thead>
+
+            <tr>
+
+                <th>Account</th>
+
+                <th>Date</th>
+
+                <th>Description</th>
+
+                <th>Debit</th>
+
+                <th>Credit</th>
+
+                <th>Balance</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+<hr>
+
+<section id="trialBalanceSection">
+
+    <h2>Trial Balance</h2>
+
+    <table id="trialBalanceTable">
+
+        <thead>
+
+            <tr>
+
+                <th>Account</th>
+                <th>Debit (₦)</th>
+                <th>Credit (₦)</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+
+                <th>Total</th>
+
+                <th id="totalDebit">₦0.00</th>
+
+                <th id="totalCredit">₦0.00</th>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+</section>
+
+</main>
+
+</div>
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+
+</html>
