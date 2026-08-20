@@ -121,7 +121,7 @@ export const chartOfAccounts = [
 
     {
         code: "3003",
-        name: "Owner Drawings",
+        name: "Owner Drawings / Dividends",
         type: "Equity",
         normalBalance: "Debit",
         cashFlowCategory: "Financing"
@@ -141,6 +141,14 @@ export const chartOfAccounts = [
         type: "Equity",
         normalBalance: "Credit",
         cashFlowCategory: "Financing"
+    },
+
+    {
+        code: "3006",
+        name: "Income Summary",
+        type: "Equity",
+        normalBalance: "Debit",
+        cashFlowCategory: "Operating"
     },
 
     // =====================
@@ -186,7 +194,7 @@ export const chartOfAccounts = [
 
     {
         code: "5003",
-        name: "Transportation Expense",
+        name: "Fuel",
         type: "Expense",
         normalBalance: "Debit",
         cashFlowCategory: "Operating"
