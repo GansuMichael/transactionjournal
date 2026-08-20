@@ -12,6 +12,8 @@ import {
 }
 from "./trialBalance.js";
 
+import { renderDashboard } from "./dashboard.js";
+
 export function initializeJournal() {
 
     const form =
@@ -65,6 +67,8 @@ export function initializeJournal() {
         renderLedger();
 
         renderTrialBalance();
+
+        renderDashboard();
 
     });
 

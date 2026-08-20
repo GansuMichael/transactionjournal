@@ -16,6 +16,8 @@ from "./controllers/JournalController.js";
 import DashboardController
 from "./controllers/DashboardController.js";
 
+import { renderDashboard } from "./dashboard.js";
+
 document.addEventListener(
     "DOMContentLoaded",
     () => {
@@ -29,6 +31,8 @@ document.addEventListener(
         renderLedger();
 
         renderTrialBalance();
+
+        renderDashboard();
 
         JournalController.initialize();
 

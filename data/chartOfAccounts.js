@@ -8,7 +8,7 @@ export const chartOfAccounts = [
 
     {
         code: "1001",
-        name: "Cash on Hand",
+        name: "Cash",
         type: "Asset",
         category: "Current Asset",
         normalBalance: "Debit",
